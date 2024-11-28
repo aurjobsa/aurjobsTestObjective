@@ -15,13 +15,14 @@ app.use(express.static(__dirname)); // Serve static files from the current direc
 // Google Sheets API setup
 const sheets = google.sheets({ version: 'v4' });
 const spreadsheetId = '1g7b7JhDanXGJ-jpoth0VfvB2RXahrB4Jmtz0KEdkHlY';  // Ensure this is correct
-const keyFilePath = './tactile-visitor-443011-k8-41dd98479f69.json';  // Path to your service account key
+  // Path to your service account key
 
 // Authentication with Google Sheets API
 async function authenticate() {
     try {
+        const credentials = JSON.parse(process.env.coastal-pointer-442022-p9-16c4da7e97d1.json);  // Assuming the secret is named GOOGLE_CREDENTIALS_JSON
         const auth = new google.auth.GoogleAuth({
-            keyFile: keyFilePath,
+            credentials : credentials;
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
         return auth.getClient();
