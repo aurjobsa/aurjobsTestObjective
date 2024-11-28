@@ -22,7 +22,7 @@ async function authenticate() {
     try {
         const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);  // Assuming the secret is named GOOGLE_CREDENTIALS_JSON
         const auth = new google.auth.GoogleAuth({
-            credentials : credentials;
+            credentials : credentials,
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
         return auth.getClient();
