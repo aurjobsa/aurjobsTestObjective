@@ -20,7 +20,7 @@ const spreadsheetId = '1g7b7JhDanXGJ-jpoth0VfvB2RXahrB4Jmtz0KEdkHlY';  // Ensure
 // Authentication with Google Sheets API
 async function authenticate() {
     try {
-        const credentials = JSON.parse(process.env.coastal-pointer-442022-p9-16c4da7e97d1.json);  // Assuming the secret is named GOOGLE_CREDENTIALS_JSON
+        const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON);  // Assuming the secret is named GOOGLE_CREDENTIALS_JSON
         const auth = new google.auth.GoogleAuth({
             credentials : credentials;
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
