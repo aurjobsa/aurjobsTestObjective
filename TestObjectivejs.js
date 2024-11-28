@@ -110,9 +110,25 @@ function startTimer() {
 
 
 const questions = [
-    { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Rome"], correctAnswer: "Paris" },
-    { question: "Who wrote 'Romeo and Juliet'?", options: ["Shakespeare", "Dickens", "Hemingway", "Austen"], correctAnswer: "Shakespeare" },
-    { question: "Which planet is known as the Red Planet?", options: ["Mars", "Earth", "Jupiter", "Saturn"], correctAnswer: "Mars" }
+    { question: "1. What is the primary purpose of a Business Requirements Document (BRD)?", options: ["a) To define the technical architecture
+", "b) To describe the scope of the business process", "c) To outline the functional and non-functional requirements of a project", "d) To create a project timeline"], correctAnswer: "c) To outline the functional and non-functional requirements of a project" },
+    { "question": "2. What is the primary role of a Business Analyst?", "options": ["a) To write code for software", "b) To analyze and improve business processes", "c) To manage financial accounts", "d) To design marketing campaigns"], "correctAnswer": "b) To analyze and improve business processes" },
+  { "question": "3. Which of the following is a common responsibility of a Business Analyst?", "options": ["a) Designing websites", "b) Writing software code", "c) Gathering and documenting business requirements", "d) Managing payrolls"], "correctAnswer": "c) Gathering and documenting business requirements" },
+  { "question": "4. What is the purpose of process mapping?", "options": ["a) To create project timelines", "b) To improve and optimize business processes", "c) To develop software", "d) To design websites"], "correctAnswer": "b) To improve and optimize business processes" },
+  { "question": "5. Which tool is commonly used by Business Analysts to create process maps?", "options": ["a) PowerPoint", "b) JIRA", "c) Microsoft Visio", "d) Excel"], "correctAnswer": "c) Microsoft Visio" },
+  { "question": "6. What is the main goal of data analysis in business?", "options": ["a) To improve business decisions and identify opportunities", "b) To design marketing ads", "c) To write software code", "d) To create presentations"], "correctAnswer": "a) To improve business decisions and identify opportunities" },
+  { "question": "7. Which of the following is NOT typically used in data analysis?", "options": ["a) Excel", "b) Power BI", "c) JIRA", "d) Tableau"], "correctAnswer": "c) JIRA" },
+  { "question": "8. What is the first step in gathering business requirements?", "options": ["a) Writing code", "b) Identifying stakeholders", "c) Creating the final product", "d) Designing solutions"], "correctAnswer": "b) Identifying stakeholders" },
+  { "question": "9. What is the best way to collect business requirements from stakeholders?", "options": ["a) Surveys and interviews", "b) Writing code", "c) Creating project plans", "d) Designing prototypes"], "correctAnswer": "a) Surveys and interviews" },
+  { "question": 10. "What document outlines the technical details of a solution?", "options": ["a) Business Requirements Document", "b) Functional Specifications Document", "c) Project Charter", "d) Meeting Minutes"], "correctAnswer": "b) Functional Specifications Document" },
+  { "question": "11. What is the role of a Business Analyst in process improvement?", "options": ["a) To write software code", "b) To suggest ways to improve processes", "c) To manage finances", "d) To design graphics"], "correctAnswer": "b) To suggest ways to improve processes" },
+  { "question": "12. What is the primary focus of a Business Analyst when designing solutions?", "options": ["a) Creating the technical architecture", "b) Aligning business needs with technical solutions", "c) Writing code", "d) Managing project budgets"], "correctAnswer": "b) Aligning business needs with technical solutions" },
+  { "question": "13. What does the 'current state' represent in process mapping?", "options": ["a) The ideal process", "b) The existing process", "c) Future process improvements", "d) A draft version of the process"], "correctAnswer": "b) The existing process" },
+  { "question": "14. Which project management tool is commonly used by Business Analysts?", "options": ["a) PowerPoint", "b) JIRA", "c) Excel", "d) Microsoft Word"], "correctAnswer": "b) JIRA" },
+  { "question": "15. What is a Business Analyst’s role in ensuring project delivery?", "options": ["a) Writing code", "b) Tracking project milestones and working with teams", "c) Managing marketing strategies", "d) Developing the product design"], "correctAnswer": "b) Tracking project milestones and working with teams" },
+  { "question": "16.How does a Business Analyst work with technical teams?", "options": ["a) Writing code for the product", "b) Acting as a liaison between business and technical teams", "c) Managing the project timeline", "d) Designing the user interface"], "correctAnswer": "b) Acting as a liaison between business and technical teams" },
+  { "question": "17. Which skill is important for a Business Analyst to have when working with clients?", "options": ["a) Writing code", "b) Strong communication and interpersonal skills", "c) Designing user interfaces", "d) Creating marketing content"], "correctAnswer": "b) Strong communication and interpersonal skills" },
+  { "question": "18. Why is it important for a Business Analyst to translate business needs into technical solutions?", "options": ["a) To create a marketing plan", "b) To develop solutions that meet both business and technical objectives", "c) To manage project budgets", "d) To write technical specifications"], "correctAnswer": "b) To develop solutions that meet both business and technical objectives" }
 ];
 
 // Display Test Questions
