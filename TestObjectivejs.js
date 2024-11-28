@@ -94,7 +94,7 @@ function startTest() {
 
 // Test Timer (10 minutes)
 function startTimer() {
-    let timeLeft = 1 * 60; // 10 minutes in seconds
+    let timeLeft = 10 * 60; // 10 minutes in seconds
     timer = setInterval(() => {
         timeLeft--;
         const minutes = Math.floor(timeLeft / 60);
