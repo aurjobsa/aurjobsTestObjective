@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Test</title>
+    <link rel="stylesheet" type="text/css" href="TestObjective.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form" class="form-container">
+        <div id="logo-container" style="text-align: center; margin-bottom: 20px;">
+            <img src="Aurjobs_Logo.jpg" alt="Company Logo" id="company-logo" style="max-width: 200px; height: auto;">
+        </div>
+        <h2>Login to Start the Test</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button id="start-test-btn">Login</button>
+        <div id="test-taken-message" style="display: none; color: red; font-size: 20px;">You have already taken the test. You cannot retake it.</div>
+        <p id="login-error" style="color: red;"></p>
+
+        <!-- Admin login link -->
+        <p><a href="#" id="admin-login-link">Admin Login</a></p>
+    </div>
+
+
+    <!-- Admin Login Form -->
+<div id="admin-login-form" class="form-container" style="display: none;">
+    <div id="logo-container" style="text-align: center; margin-bottom: 20px;">
+        <img src="Aurjobs_Logo.jpg" alt="Company Logo" id="company-logo" style="max-width: 200px; height: auto;">
+    </div>
+    <h2>Admin Login</h2>
+    <input type="text" id="admin-email" placeholder="Enter admin email">
+    <input type="password" id="admin-password" placeholder="Enter admin password">
+    <button id="admin-login-btn">Login as Admin</button>
+    <div id="admin-login-error" style="color: red;"></div>
+</div>
+
+
+<!-- Admin Dashboard (only visible after successful admin login) -->
+<div id="admin-dashboard" class="form-container" style="display: none;">
+    <h2>Admin Dashboard</h2>
+    <h3>Update Test Details</h3>
+    <form id="update-test-form">
+        <label for="test-duration">Test Duration (minutes):</label>
+        <input type="number" id="test-duration" min="1" placeholder="Enter duration in minutes">
+        
+        <h3>Update Questions</h3>
+        <div id="questions-container">
+            <!-- Dynamic questions will be inserted here -->
+        </div>
+        <button type="submit">Save Changes</button>
+    </form>
+    <button id="add-question-btn">Add Question</button>
+</div>
+
+    <!-- Start Test Page -->
+    <div id="start-test-page" class="form-container" style="display: none;">
+        <h2>Welcome, <span id="candidate-name"></span></h2>
+        <p>Click the button below to start the test:</p>
+        <button id="start-test-manually">Start Test</button>
+        <p>Test will auto-start in <span id="countdown-timer">10</span> seconds.</p>
+    </div>
+
+    <!-- Test Container -->
+    <div id="test-container" class="form-container" style="display: none;">
+        <div id="timer"></div>
+        <div id="question-container"></div>
+        <button id="submit-test-btn">Submit Test</button>
+    </div>
+
+    <!-- Confirmation Page -->
+    <div id="submission-container" style="display: none;">
+        <div id="logo-container" style="text-align: center; margin-bottom: 20px;">
+            <img src="Aurjobs_Logo.jpg" alt="Company Logo" id="company-logo" style="max-width: 200px; height: auto;">
+        </div>
+        <h2>Test Completed!</h2>
+        <p>Thank you for completing the test.</p>
+        <p>Redirecting you shortly...</p>
+    </div>
+
+    <script src="TestObjectivejs.js"></script>
+</body>
+</html>
